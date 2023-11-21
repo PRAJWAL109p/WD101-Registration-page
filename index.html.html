@@ -6,10 +6,11 @@
   <title>Registration Form</title>
   <link rel="stylesheet" href="index.css.css">
 </head>
-<h1>
-  Registration Form
-</h1>
 <body>
+
+  <h1>
+    Registration Form
+  </h1>
 
   <form id="registrationForm">
     <label for="username">Username:</label>
@@ -34,9 +35,22 @@
 
     <button type="button" onclick="submitForm()">Submit</button>
 
-    <table id="infoTable"></table>
+    <table id="infoTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Password</th>
+          <th>Email ID</th>
+          <th>Dob</th>
+          <th>Profession</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="watermark">Sample: Name, Email, ID</div>
   </form>
 
   <script src="index.js.js"></script>
 </body>
 </html>
+
